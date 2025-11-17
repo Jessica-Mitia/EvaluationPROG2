@@ -1,10 +1,10 @@
 import lombok.*;
 
+import java.util.List;
+
 @AllArgsConstructor
 @Getter
 @Setter
-@ToString
-@EqualsAndHashCode
 
 public class Cours {
     public enum Label {
@@ -15,4 +15,5 @@ public class Cours {
     private Label label;
     private int credit;
     private Enseignant enseignant;
+    private List<Examen> examens;
 }
